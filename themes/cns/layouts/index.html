@@ -146,6 +146,7 @@
   <div class="row pb-4 pt-4">
     {{ $filterByService := where site.RegularPages "Params.meta_title" "==" "Services" }}
     {{ range $filterByService }}
+    {{/* added this classes  md:col-6 lg:col-4 mb-14 myimg  */}}
       <div class="md:col-6 lg:col-4 mb-14 myimg" data-aos="zoom-in">
         {{ partial "components/service-card" . }}
       </div>
